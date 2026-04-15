@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #2b2b2b, #1a1a1a);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Centraliza tudo */
+.main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Caixa principal */
+.caixa {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Título principal */
+.caixa h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Subtítulos */
+.caixa h2 {
+    color: #ffffff;
+    font-weight: 400;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Efeito hover (fica bonito pra portfólio) */
+.caixa h2:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Pequeno efeito de linha */
+.caixa h2::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    margin: 5px auto 0;
+    transition: 0.3s;
+}
+
+.caixa h2:hover::after {
+    width: 50%;
+}
+
+.caixa a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+
+.caixa a:hover {
+    color: #fff;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #000000, #2b2b2b, #1a1a1a);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.caixa {
+    text-align: center;
+    background: rgba(255,255,255,0.05);
+    padding: 40px 60px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.caixa h1 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.caixa a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.caixa a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.caixa h2 {
+    margin: 10px 0;
+}
+
+
+.voltar {
+    margin-top: 25px;
+}
+
+.voltar a {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.voltar a:hover {
+    color: #fff;
+}
